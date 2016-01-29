@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Reviews"
+        android:background="#009688"
+        android:fontFamily="sans-serif"
+        android:id="@+id/textViewReview" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="D_textViewReview"
+        android:textColor="#000000"
+        android:textSize="14dp"
+        android:textStyle="normal"
+        android:fontFamily="sans-serif"
+        android:id="@+id/D_textViewReview" />
+</LinearLayout>

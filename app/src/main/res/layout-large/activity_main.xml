@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false">
+
+    <fragment
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:name="com.example.movie.moviefilm.Fragment_main"
+        android:id="@+id/fragment_main"
+        android:layout_weight="1"/>
+
+    <fragment
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:name="com.example.movie.moviefilm.Fragment_details"
+        android:id="@+id/fragment_details"
+        android:layout_weight="2" />
+
+
+</LinearLayout>
+
+
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/bb">
+    <fragment class="com.example.movie.moviefilm.Fragment_main"
+        android:id="@+id/fragment_main"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <fragment class="com.example.movie.moviefilm.Fragment_details"
+        android:id="@+id/fragment_details"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>
+-->
+
+
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp" android:baselineAligned="false"
+    android:divider="?android:attr/dividerHorizontal" android:orientation="horizontal"
+    android:showDividers="middle" tools:context=".ItemListActivity">
+
+
+    This layout is a two-pane layout for the Items
+    master/detail flow.
+
+
+
+    <fragment android:id="@+id/item_list"
+        android:name="com.example.movie.moviefilm.Fragment_main"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:layout="@android:layout/list_content" />
+
+    <fragment android:id="@+id/item_details"
+        android:name="com.example.movie.moviefilm.Fragment_details"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        tools:layout="@android:layout/list_content" />
+
+
+</LinearLayout>
+ -->
+
+
+    <!--?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+       <fragment android:name="com.example.movie.moviefilm.Fragment_main"
+            android:id="@+id/list"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <fragment android:name="com.example.movie.moviefilm.Fragment_details"
+            android:id="@+id/viewer"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout-->
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <fragment android:name="com.example.movie.moviefilm.Fragment_main"
+        android:id="@+id/Fragment_main"
+        android:layout_weight="1"
+        android:layout_width="1dp"
+        android:layout_height="match_parent" />
+    <fragment android:name="com.example.movie.moviefilm.Fragment_details"
+        android:id="@+id/Fragment_details"
+        android:layout_weight="2"
+        android:layout_width="1dp"
+        android:layout_height="match_parent" />
+
+</LinearLayout>-->

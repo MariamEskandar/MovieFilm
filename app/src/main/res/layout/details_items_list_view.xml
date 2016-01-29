@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <TextView
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:textAppearance="?android:attr/textAppearanceLarge"
+       android:text="D_textView_original_title"
+       android:background="#009688"
+       android:textSize="18dp"
+       android:textStyle="normal"
+       android:fontFamily="sans-serif"
+       android:id="@+id/D_textView_original_title"
+       android:layout_gravity="center_horizontal" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView_detail"
+            android:src="@mipmap/ic_launcher"
+            android:layout_gravity="center_horizontal" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="8"
+            android:isIndicator="false" />
+
+        <Space
+            android:layout_width="30dp"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/D_textView_vote_average"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:fontFamily="sans-serif"
+                android:text="D_textView_vote_average" />
+
+            <TextView
+            android:id="@+id/D_textView_release_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:text="D_textView_release_date" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="D_textView_overview"
+        android:textSize="14dp"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif"
+        android:id="@+id/D_textView_overview"
+        android:layout_weight="0.00" />
+
+</LinearLayout>

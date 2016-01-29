@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MovieFilm</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="Preference">
+        <item >Most Popular</item>
+        <item >Most Rated</item>
+        <item >My Favorites</item>
+    </string-array>
+
+ 
+
+</resources>
