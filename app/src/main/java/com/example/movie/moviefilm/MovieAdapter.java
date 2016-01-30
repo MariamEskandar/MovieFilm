@@ -64,7 +64,7 @@ public class MovieAdapter extends ArrayAdapter<Movie> {
         holder.imageview.setImageResource(R.drawable.ic_launcher);
         new DownloadImageTask(holder.imageview).execute("http://image.tmdb.org/t/p/w185//" +MovieList.get(position).getImage());
 
-        System.out.println(MovieList.get(position).getImage());
+      //  System.out.println(MovieList.get(position).getImage());
 
 
         Picasso.with(getContext()).load("http://image.tmdb.org/t/p/w185//" + MovieList.get(position).getImage()).placeholder(R.drawable.ic_launcher).into(holder.imageview);

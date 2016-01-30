@@ -39,9 +39,7 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.util.EntityUtils;
 
 
-/**
- * Created by MINA on 24/01/2016.
- */
+
 public class Fragment_main extends Fragment  {
 
 
@@ -114,7 +112,7 @@ public class Fragment_main extends Fragment  {
                 }
                 else
                      transaction.replace(R.id.fragment_details, newFragment).commit();
-                 System.out.println("kkkkkkkkk"+MovieList.get(position).getVote_average());
+               //  System.out.println("kkkkkkkkk"+MovieList.get(position).getVote_average());
 
 
         }
@@ -212,7 +210,7 @@ public class Fragment_main extends Fragment  {
                             String Movie_id = (String)it.next();
                             int MovieId = Integer.parseInt(Movie_id);
 
-                            System.out.println("kkkjesus" + MovieId);
+                         //   System.out.println("kkk" + MovieId);
 
 
                             for (int i = 0; i < jarray.length(); i++) {
@@ -231,8 +229,6 @@ public class Fragment_main extends Fragment  {
                                     movie.setPopularity(object.getInt("popularity"));
 
                                     MovieList.add(movie);
-                                    System.out.println("hhhhhhh206647"+object.getInt("id")+movie.getId());
-                                    System.out.println("hhhhhhh206647");
 
                                 }
 

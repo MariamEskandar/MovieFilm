@@ -15,18 +15,11 @@ import java.util.ArrayList;
 
 
 
-/**
- * Created by MINA on 20/01/2016.
- */
 public class MovieAdapterDetails extends ArrayAdapter<Movie> {
 
     ArrayList<Movie> list;
     LayoutInflater vi;
     int Resource;
-    private static int incrementedValue = 0;
-    public static final String PREFS_NAME = "MyPrefsFile";
-    private static final String FOLLOWED_ROUTES = "followedRoutes";
-
 
     public MovieAdapterDetails(Context context, int resource, ArrayList<Movie> objects) {
         super(context, resource, objects);

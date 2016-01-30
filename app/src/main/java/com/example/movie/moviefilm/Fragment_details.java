@@ -31,9 +31,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
 
-/**
- * Created by MINA on 24/01/2016.
- */
+
 public class Fragment_details extends Fragment {
     ArrayList<Movie> MovieList;
     MovieAdapterDetails adapter;
@@ -69,7 +67,7 @@ public class Fragment_details extends Fragment {
             movie.setVote_average(vote_average);
             movie.setRelease_date(release_date);
             MovieList.add(movie);
-            System.out.println("arg"+getArguments().getInt("MovieID"));
+         //   System.out.println("arg"+getArguments().getInt("MovieID"));
            final ListView listView=(ListView)view.findViewById(R.id.listViewDetails);
             adapter = new MovieAdapterDetails(getActivity(), R.layout.details_items_list_view, MovieList);
             adapter.notifyDataSetChanged();
@@ -91,7 +89,7 @@ public class Fragment_details extends Fragment {
             adapterTrailer.notifyDataSetChanged();
             listViewTrailer.setAdapter(adapterTrailer);
 
-            System.out.println("http://api.themoviedb.org/3/movie/" + movieID + "/videos?api_key=610d2a960011e9203aaf2547007cd5f9");
+           // System.out.println("http://api.themoviedb.org/3/movie/" + movieID + "/videos?api_key=610d2a960011e9203aaf2547007cd5f9");
 ////////////////////////////////////
             listViewTrailer.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
@@ -125,7 +123,7 @@ public class Fragment_details extends Fragment {
 
 
         } else {
-            Toast.makeText(getActivity().getApplicationContext(), "arguments returns null", Toast.LENGTH_SHORT).show();
+           // Toast.makeText(getActivity().getApplicationContext(), "arguments returns null", Toast.LENGTH_SHORT).show();
         }
 
         return view;
@@ -247,7 +245,7 @@ public class Fragment_details extends Fragment {
                         Movie movie=new Movie();
                         movie.setTrailer("https://www.youtube.com/watch?v="+object.getString("key"));
 
-                        System.out.println("keypp" + movie.getTrailer());
+                      //  System.out.println("keypp" + movie.getTrailer());
                         MovieListTrailer.add(movie);
 
                     }
